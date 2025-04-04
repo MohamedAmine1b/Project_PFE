@@ -1,0 +1,57 @@
+.seance {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sea-stg {
+    border-bottom: 1px solid black;
+    padding: 5px 3px;
+}
+.seance.desactive {
+    background-color: rgb(128, 128, 128);
+    pointer-events: none;
+}
+.seance:not(.desactive) .sea-stg:nth-child(odd){
+    background-color:#F2F4F5 ;
+}
+.btn-container {
+    padding: 5px 0;
+}
+
+.btn-valider {
+    background-color: var(--primary-green);
+    text-align: end;
+    border: none;
+    color: white;
+    transition: background-color 0.3s;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.btn-valider:disabled {
+    background-color: var(--second-green);
+    color: white;
+}
+
+.btn-valider:hover {
+    background-color: var(--second-green);
+    color: var(--primary-green);
+}
+
+.btn-valider:hover:disabled {
+    background-color: var(--second-green);
+    color: white;
+}
+@media (max-width:1167px) {
+    .sea-stg {
+        border-bottom: 1px solid black;
+        padding: 5px;
+    }
+}

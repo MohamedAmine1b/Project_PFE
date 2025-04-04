@@ -1,0 +1,44 @@
+:root {
+    --border: #DFDFDF;
+    --bg-color-db: #F2F4F5;
+    --primary-green: #32B67A;
+    --second-green: #CDF2E1;
+}
+.main-feuille {
+    width: 85%;
+}
+.container-fueille{
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+.body {
+    background-color: var(--bg-color-db);
+    height: fit-content;
+    /* border: 1px solid black; */
+}
+.fiche{
+    width: fit-content;
+    margin: 0 auto;
+    /* border: 1px solid rgb(195, 0, 255); */
+}
+.logo{
+    width: fit-content;
+} 
+.logo img{
+    width: 100px;
+}
+.special,
+.general{
+    width: fit-content;
+    font-size: 14px;
+}
+.special span,
+.general span{
+    font-weight: 600;
+}
+/* @media (max-width: 992px) {
+    .main-feuille {
+        width: 100%;
+    }
+
+} */

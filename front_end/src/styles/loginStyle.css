@@ -1,0 +1,96 @@
+:root {
+    --bg-color: #454746;
+    --primary-green: #32B67A;
+    --second-green: #CDF2E1;
+}
+.login-body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-login {
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    border-radius: 22px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-login::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: -150px;
+    z-index: -1;
+    width: 500px;
+    height: 250px;
+    border-radius: 230.50px;
+    background-color: var(--primary-green);
+}
+.main-login::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -150px;
+    z-index: -1;
+    width: 500px;
+    height: 250px;
+    border-radius: 230.50px;
+    background-color: var(--second-green);
+}
+.lb-login{
+    width: 100%;
+}
+.lb-login span{
+    font-size: 14px;
+}
+.inp:focus{
+    border-color: var(--primary-green);
+    outline: none;
+    box-shadow: 0 0 10px rgba(50, 182, 122, 0.6);
+    transition: box-shadow 0.2s ease-in-out;
+}
+.btn-submit {
+    background-color: var(--primary-green);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+    transition: background-color 0.2s,
+        color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: var(--second-green);
+    color: var(--primary-green);
+}
+@media (max-width: 992px) {
+    .main-login::before{
+        width: 400px;
+        height: 200px;
+        right: -100px;
+    }
+    .main-login::after{
+        width: 400px;
+        height: 200px;
+        left: -100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-login::before,
+    .main-login::after{
+        display: none;
+    }
+}
+
+@media (max-width: 445px) {
+    .main-login{
+        width: 90%;
+        height: 70vh;
+    }
+}

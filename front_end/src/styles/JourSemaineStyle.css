@@ -1,0 +1,40 @@
+.jour-seance {
+    border: 1px solid black;
+    border-bottom: none;
+    width: fit-content;
+
+}
+
+.jour-seance:last-child {
+    overflow: hidden;
+}
+
+.seances {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-seance {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.container-seance:first-child {
+    border-left: none;
+}
+
+.day {
+    text-align: center;
+    color: black;
+    margin: 0;
+}
+
+.date {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.title-jour {
+    height: 40px;
+}

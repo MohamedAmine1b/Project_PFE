@@ -1,0 +1,113 @@
+:root {
+    --border: #DFDFDF;
+    --bg-color-db: #F2F4F5;
+    --primary-green: #32B67A;
+    --second-green: #CDF2E1;
+}
+
+.main-db {
+    width: 85%;
+    height: 100vh;
+}
+
+.body {
+    background-color: var(--bg-color-db);
+    height: 90vh;
+}
+
+.update-seance,
+.update-db {
+    border-radius: 10px;
+    width: 50%;
+}
+
+.lb-db {
+    background-color: var(--bg-color-db);
+    border: 2px dashed var(--border);
+    border-radius: 10px;
+    height: 20vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.lb-db:hover {
+    background-color: #aeafaf;
+    border: 2px dashed #858585;
+}
+
+.inpUpdate {
+    visibility: hidden;
+}
+
+.btn-submit {
+    background-color: var(--primary-green);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+    transition: background-color 0.2s,
+        color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: var(--second-green);
+    color: var(--primary-green);
+}
+
+.para {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .container-update {
+        flex-direction: column;
+
+    }
+
+    .update-db,
+    .update-seance {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-db {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .update-title {
+        font-size: 16px;
+    }
+
+    .lb-db {
+        height: 15vh;
+    }
+
+    .para {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 445px) {
+    .para {
+        font-size: 8px;
+    }
+
+    .update-title {
+        font-size: 12px;
+    }
+
+    .para {
+        font-size: 6px;
+    }
+
+    .icons {
+        width: 20px;
+    }
+}

@@ -1,0 +1,93 @@
+:root {
+    --primary-green: #32B67A;
+    --second-green: #CDF2E1;
+    --border: #DFDFDF;
+}
+
+.side-container {
+    height: auto;
+    width: 15%;
+    border: 0.5px solid var(--border);
+    background-color: var(--bg-color-db);
+    transition: width 0.3s ease-in-out;
+}
+
+.sideBarMenu {
+    list-style: none;
+    padding: 0;
+    margin-top: 35px;
+}
+
+.sideBarMenu li {
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s,
+        color 0.2s;
+    font-weight: 400;
+}
+
+.sideBarMenu li:hover,
+.activePage {
+    background-color: var(--second-green);
+    color: var(--primary-green);
+    font-weight: 500;
+}
+
+.activePage span {
+    font-weight: 500;
+}
+
+.menuIcon {
+    width: 20px;
+    position: absolute;
+    top: 13px;
+    margin-left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .sideBarMenu li {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 992px) {
+    .side-container {
+        width: 0;
+    }
+
+    .panneau {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .side-container.show {
+        width: 30%;
+    }
+
+    .side-container.hide {
+        width: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .menuIcon {
+        width: 15px;
+    }
+
+}
+
+@media (max-width: 445px) {
+    .sideBarMenu li span {
+        display: none;
+    }
+
+    .side-container.show {
+        width: 15%;
+    }
+}

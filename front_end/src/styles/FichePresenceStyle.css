@@ -1,0 +1,62 @@
+.fiche-container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: white;
+}
+.nums,.noms{
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    text-align:center;
+}
+.noms{
+    width: 150px;
+}
+.nums .num{
+    border-top: 1px solid black;
+    padding: 3px;
+    color: black;
+}
+.nums .title,
+.noms .title{
+    height: 32px;
+    padding: 10px;
+    font-size: 14px;
+}
+.nums{
+    border-radius:20px 0 0 0  ;
+}
+.num:nth-child(even),
+.nom:nth-child(even){
+    background-color: #F2F4F5;
+}
+.nom{
+    border-top: 1px solid black;
+    padding: 6px ;
+    font-size: 12px;
+    font-weight:700;
+}
+
+.info-stgs{
+    display: flex;
+    margin: 0;
+}
+.em{
+    text-align: center;
+    color: black;
+    padding: 5px;
+    border-right: 1px solid black;
+}
+.em span{
+    font-size: 10px;
+    font-weight: 700;
+}
+.jour-seance:last-child{
+    border-radius: 0 20px 20px 0;
+}
+

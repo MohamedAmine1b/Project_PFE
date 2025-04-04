@@ -1,0 +1,20 @@
+nav {
+    height: 50px;
+}
+
+@media (max-width: 600px) {
+    .nav-title,
+    .user-name {
+        font-size: 14px;
+    }
+    nav{
+        width: 90%;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 445px) {
+    .nav-title{
+        font-size: 12px;
+    }
+}
